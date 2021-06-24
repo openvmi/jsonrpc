@@ -152,7 +152,7 @@ const (
 type RPCRequest struct {
 	Method  string      `json:"method"`
 	Params  interface{} `json:"params,omitempty"`
-	ID      *int        `json:"id"`
+	ID      *int        `json:"id,omitempty"`
 	JSONRPC string      `json:"jsonrpc"`
 }
 
